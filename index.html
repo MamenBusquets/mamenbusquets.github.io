@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#titulo" class="navbar-logo"> Inici </a>
+
+        <ul class="navbar-lista">
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#certificats">Certificats</a></li>
+            <li><a href="#coneixements-informatics">Coneixements informàtics</a></li>
+            <li><a href="#projectes">Projectes</a></li>
+            <li><a href="#experiencia">Experiència</a></li>
+            <li><a href="#contacte">Parlem?</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="titulo" class="titulo"> María del Carmen Busquets </h1>
+
+    <section id="sobre-mi">
+        <h2 class="subtitulo"> Sobre mi </h2>
+
+        <div class="sobre-mi">
+            <p class="texto">
+                Hola! &#128516; Em pots dir Mamen, tinc 24 anys, soc de Reus i soc estudiant del CFGS de Desenvolupament
+                d'aplicacions multiplataforma (DAM).
+                <br>M'agrada desenvolupar al front-end.
+                <br>M'agraden els idiomes, la fotografia i em considero una persona creativa.
+            </p>
+
+            <img id="img_portada" class="img_portada" src="material/foto_inici.jpeg"
+                alt="Imatge de la platja feta per mi">
+        </div>
+    </section>
+
+    <section id="certificats"> <!-- Una sección para englobar las tarjetas en un mismo apartado -->
+        <h2 class="subtitulo"> Certificats </h2>
+        <div class="seccion_tarjeta">
+
+            <!-- Contenedor de cada tarjeta con su contenido -->
+            <article class="tarjeta">
+                <img class="img_tarjeta" src="material/eng.png" alt="Llibre d'anglès">
+                <p class="texto_tarjeta"> Certificat oficial d'anglès nivell B2 -- EOI Reus </p>
+            </article>
+
+            <article class="tarjeta">
+                <img class="img_tarjeta img_tarjeta--logo" src="material/bs-logo.png"
+                    alt="Logo escola online BIG School">
+                <p class="texto_tarjeta"> Certificat desenvolupament amb IA -- Big School </p>
+            </article>
+        </div>
+    </section>
+
+    <section id="coneixements-informatics">
+        <h2 class="subtitulo"> Coneixements informàtics </h2>
+        <ul class="lista">
+            <li> Java </li>
+            <li> HTML/CSS </li>
+            <li> PHP </li>
+            <li> JavaScript </li>
+            <li> MySQL </li>
+            <li> Git </li>
+            <li> GitHub </li>
+            <li> Laravel </li>
+            <li> Android Studio </li>
+            <li> Swift </li>
+        </ul>
+    </section>
+
+    <section id="projectes">
+        <h2 class="subtitulo"> Projectes </h2>
+
+        <!-- Botones de filtro -->
+        <div class="filtros">
+            <button class="filtro activo" data-filtro="todos">Tots</button>
+            <button class="filtro" data-filtro="java">Java</button>
+            <button class="filtro" data-filtro="php">PHP</button>
+        </div>
+
+        <!-- Contenedor de todas las tarjetas -->
+        <div class="seccion_tarjeta" id="lista-proyectos">
+
+            <!-- TARJETA 1 Java  -->
+            <article class="tarjeta tarjeta-proyecto" data-categoria="java">
+                <img class="img_proyecto" src="material/proyectos/proyecto-java.png" alt="Captura del projecte de Java">
+
+                <span class="lenguaje">Java</span>
+                <h3 class="titulo_proyecto"> Plantilla </h3>
+                <p class="texto_tarjeta">
+                    Plantilla
+                </p>
+
+                <a class="enlace_github" href="" target="_blank" rel="noopener noreferrer">
+                    <img class="logo" src="material/github.png" alt="GitHub">
+                    Veure al GitHub
+                </a>
+            </article>
+
+            <!-- TARJETA 2 PHP -->
+            <article class="tarjeta tarjeta-proyecto" data-categoria="php">
+                <img class="img_proyecto" src="material/botiga-virtual.png" alt="Captura del projecte de PHP">
+
+                <span class="lenguaje">PHP</span>
+                <h3 class="titulo_proyecto"> Botiga virtual temàtica de Harry Potter </h3>
+                <p class="texto_tarjeta">
+                    És una web desenvolupada amb Laravel/PHP que simula una botiga en línia ambientada en el món de Harry Potter.
+                    Des de la pàgina principal es pot accedir a:
+                    Un test de cases de Hogwarts, que permet descobrir a quina casa pertanys (Gryffindor, Slytherin,
+                    Hufflepuff o Ravenclaw).
+                    Una llista de productes, on es pot:
+                    - Mostrar, afegir, editar o eliminar productes
+                </p>
+
+                <a class="enlace_github" href="https://github.com/MamenBusquets/Botiga-tematica-de-harry-potter"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="logo" src="material/github.png" alt="GitHub">
+                    Veure al GitHub
+                </a>
+            </article>
+
+            <article class="tarjeta tarjeta-proyecto" data-categoria="php">
+                <img class="img_proyecto" src="material/lista-vacia.png" alt="Captura del projecte de PHP">
+
+                <span class="lenguaje">PHP</span>
+                <h3 class="titulo_proyecto"> Llista de la compra simple </h3>
+                <p class="texto_tarjeta">
+                    És una pàgina web en què es mostra un llistat de productes disponibles. On pots seleccionar els productes que vulguis mitjançant
+                    caselles de verificació i prémer un botó per afegir-los a la llista de la compra.
+                    Si prems el botó d'afegir sense haver seleccionat cap producte, l'aplicació mostra un
+                    missatge d'avís: "No has seleccionat cap producte".
+                </p>
+                
+                <a class="enlace_github" href="https://github.com/MamenBusquets/llista-compra-php" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="logo" src="material/github.png" alt="GitHub">
+                    Veure al GitHub
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <h2 class="subtitulo"> Experiència </h2>
+        <p class="texto"> Pròximament... </p>
+    </section>
+
+    <section id="contacte" class="contacto">
+        <h2 class="subtitulo"> Parlem? <img class="logo" src="material/bocadillo.png"></h2>
+        <a href="mailto:maria.busquets@insbaixcamp.cat?Subject=Hola!%20Digues%20quina%20és%20la%20teva%20oferta"
+            target="_blank"> <img class="logo" src="material/gmail.png"> Gmail </a>
+        <a href="https://www.linkedin.com/in/mar%C3%ADa-del-carmen-busquets-pinar-723267246/" target="_blank"> <img
+                class="logo" src="material\linkedin.png"> Linkedin </a>
+        <a href="https://github.com/MamenBusquets" target="_blank"> <img class="logo" src="material/github.png"> GitHub
+        </a>
+    </section>
+
+</body>
+<script src="index.js"> </script>
+
+</html>
